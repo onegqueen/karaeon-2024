@@ -1,0 +1,53 @@
+/* 가맹 혜택 */
+.franchise-benefits {
+    position: relative; /* 부모 요소를 기준으로 오버레이가 배치됨 */
+    padding: 50px;
+    text-align: center;
+    background-image: url('../../source/food/카츠단체1.jpg'); /* 배경 이미지 */
+    background-size: cover;
+    background-position: center;
+    z-index: 0; /* 기본 컨텐츠가 오버레이 아래에 있도록 설정 */
+}
+
+/* 불투명도 적용을 위한 오버레이 */
+.franchise-benefits::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* 50% 불투명도 적용 */
+    z-index: 1; /* 오버레이가 배경 이미지 위에 오도록 설정 */
+    pointer-events: none; /* 오버레이가 클릭 이벤트를 차단하지 않도록 설정 */
+}
+
+/* 내부 컨텐츠는 오버레이 위에 표시 */
+.franchise-benefits .container {
+    position: relative;
+    z-index: 2; /* 오버레이보다 높은 z-index 값 */
+}
+
+.franchise-benefits img{
+    width: 100%;
+
+}
+
+.franchise-benefits ul {
+    list-style: none;
+}
+
+.franchise-benefits ul li {
+    margin: 10px 0;
+}
+
+.benefit-item-image {
+    opacity: 0; /* 기본적으로 보이지 않음 */
+    transform: translateY(20px); /* 약간 아래에 위치 */
+    transition: opacity 0.6s ease, transform 0.6s ease; /* 부드러운 애니메이션 */
+}
+
+.benefit-item-image.show {
+    opacity: 1; /* 보여지도록 설정 */
+    transform: translateY(0); /* 제자리로 이동 */
+}

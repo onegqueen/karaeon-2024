@@ -1,0 +1,249 @@
+/* Reset 기본 스타일 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* 헤더 스타일 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px; /* 패딩을 줄여서 더 컴팩트하게 */
+    background-color: rgba(0, 0, 0, 0.3); /* 더 투명하게 */
+    backdrop-filter: blur(10px); /* 모던한 블러 효과 추가 */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* 스크롤 시 배경색 전환 */
+}
+
+/* 스크롤 시 헤더 배경 변화 */
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.7); /* 스크롤하면 배경을 더 진하게 */
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* 네비게이션 메뉴 */
+.nav-menu {
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s ease, transform 0.3s ease; /* 색상과 움직임 애니메이션 */
+}
+
+.nav-menu li a:hover {
+    color: #ffcc00; /* hover 시 색 변경 */
+    transform: scale(1.1); /* hover 시 살짝 확대 */
+}
+
+/* 햄버거 메뉴 스타일 */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* 반응형 메뉴 설정 */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        z-index: 999;
+        max-height: 0; /* 초기 높이를 0으로 설정 */
+        overflow: hidden;
+        transition: max-height 0.4s ease; /* 부드러운 애니메이션 */
+    }
+
+    .nav-menu.active {
+        max-height: 500px; /* 메뉴가 활성화될 때의 최대 높이 */
+    }
+
+    .hamburger {
+        display: flex;
+        z-index: 1001;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    /* 헤더와 메뉴 겹침 방지 */
+    .hero {
+        margin-top: 60px;
+    }
+}
+
+
+
+/* 브랜드 소개 */
+.about {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 통계 섹션 제목 스타일 */
+.stats-title {
+    font-size: 2.5rem;
+    font-weight: bold; /* 굵은 폰트 */
+    color: #004d00; /* 메인 색상 */
+    margin-bottom: 30px; /* 제목과 박스들 사이 간격 */
+    text-align: center;
+}
+
+
+/* 고객 후기 */
+.testimonials {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* FAQ 섹션 */
+.faq {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* 푸터 스타일 */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-info {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 하단 고정 박스 스타일 */
+.fixed-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffcc00;
+    padding: 30px 20px; /* 패딩을 늘려서 박스 크기를 키움 */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fixed-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* 입력란 사이의 간격을 늘림 */
+    flex-wrap: wrap; /* 입력 필드가 화면 크기에 맞게 줄 바꿈 가능 */
+}
+
+.fixed-box h3 {
+    font-size: 24px; /* 제목 크기 증가 */
+    margin-right: 15px; /* 제목과 입력란 사이 간격 */
+}
+
+.fixed-box input {
+    padding: 15px; /* 입력란 크기 증가 */
+    border: none;
+    border-radius: 4px;
+    font-size: 18px; /* 글씨 크기 증가 */
+    width: 250px; /* 입력란 너비 증가 */
+}
+
+.fixed-box button {
+    padding: 15px 30px; /* 버튼 크기 증가 */
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px; /* 버튼 글씨 크기 증가 */
+}
+
+.fixed-box button:hover {
+    background-color: #444;
+}
+

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카레온 - 프랜차이즈 카레의 새로운 이름</title>
+    <link rel="stylesheet" href="../css/main/main.css">
+    <link rel="stylesheet" href="../css/main/menu.css">
+    <link rel="stylesheet" href="../css/main/benefit.css">
+    <link rel="stylesheet" href="../css/main/modal.css">
+    <link rel="stylesheet" href="../css/main/main_banner.css">
+    <link rel="stylesheet" href="../css/main/stats.css">
+
+
+    <!-- Bootstrap CSS 추가 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 구글 폰트 Noto Sans KR 추가 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Bootstrap JavaScript 추가 (모달과 관련된 기능) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- 헤더 -->
+    <header>
+        <div class="logo">
+            <img src="../source/logo2.png" alt="카레온 로고">
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#about">회사소개</a></li>
+                <li><a href="#franchise-benefits">가맹문의</a></li>
+                <li><a href="#menu">메뉴소개</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 풀스크린 메인 배너 -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <!-- 회전하는 가츠동 이미지 (왼쪽) -->
+            <div class="rotating-image-container">
+                <img src="../../source/food/돈부리.png" alt="가츠동" class="rotating-image">
+            </div>
+
+            <!-- 텍스트와 버튼 (오른쪽) -->
+            <div class="hero-text">
+                <h2>카레 전문 프랜차이즈</h2>
+                <h1><img src="../source/logo2.png" alt="카레온 로고"></h1>
+                <p>적은 예산으로 당신의 가맹점을 지금 시작하세요!</p>
+                <button type="button" class="apply-btn" data-bs-toggle="modal" data-bs-target="#applyModal">가맹 신청</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap 모달 -->
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="applyModalLabel">가맹 신청</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <!-- 폼 내용 -->
+            <form>
+                <div class="mb-3">
+                <label for="name" class="form-label">성함</label>
+                <input type="text" class="form-control" id="name" placeholder="성함" required>
+                </div>
+                <div class="mb-3">
+                <label for="phone" class="form-label">전화번호</label>
+                <input type="tel" class="form-control" id="phone" placeholder="전화번호" required>
+                </div>
+                <div class="mb-3">
+                <label for="location" class="form-label">창업 희망 지역</label>
+                <input type="text" class="form-control" id="location" placeholder="희망 지역" required>
+                </div>
+                <div class="mb-3">
+                <label for="age" class="form-label">나이</label>
+                <input type="number" class="form-control" id="age" placeholder="나이" required>
+                </div>
+            </form>
+            </div>
+            <div class="modal-footer">
+            <button type="submit" class="btn btn-warning">신청하기</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- 통계 -->
+    <section class="stats-section">
+        <h1 class="stats-title">카레온은 수치로 증명합니다!</h1>
+        <div class="stats-content">
+            <div class="stats-container">
+                <div class="stats-box">
+                    <div class="stats-text">
+                        <h2>17</h2>
+                        <p>테이블 회전율</p>
+                        <span>* 23년 1월 구월로테이션점</span>
+                    </div>
+                    <div class="stats-box-icon">
+                        <img src="../source/icon/icons8-레스토랑-테이블-50.png" alt="icon">
+                    </div>
+                </div>
+                <div class="stats-box">
+                    <div class="stats-text">
+                        <h2>17</h2>
+                        <p>테이블 회전율</p>
+                        <span>* 23년 1월 구월로테이션점</span>
+                    </div>
+                    <div class="stats-box-icon">
+                        <img src="../source/icon/icons8-달력-48.png" alt="icon">
+                    </div>
+                </div>
+                <div class="stats-box">
+                    <div class="stats-text">
+                        <h2>17</h2>
+                        <p>테이블 회전율</p>
+                        <span>* 23년 1월 구월로테이션점</span>
+                    </div>
+                    <div class="stats-box-icon">
+                        <img src="../source/icon/icons8-엄지-척-30.png" alt="icon">
+                    </div>
+                </div>
+                <div class="stats-box">
+                    <div class="stats-text">
+                        <h2>17</h2>
+                        <p>테이블 회전율</p>
+                        <span>* 23년 1월 구월로테이션점</span>
+                    </div>
+                    <div class="stats-box-icon">
+                        <img src="../source/icon/icons8-총-매출-50.png" alt="icon">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 스크롤 시 등장할 이미지 -->
+            <div class="scroll-image">
+                <img src="../source/food/카레우동.png" alt="카레우동 이미지">
+            </div>
+        </div>
+    </section>
+
+    <!-- 메뉴 섹션 -->
+    <div class="menu-section">
+        <h2>대표 메뉴</h2>
+
+        <!-- 탭 네비게이션 -->
+        <div class="menu-tabs">
+            <button class="tab-link active" data-category="curry">카레</button>
+            <button class="tab-link" data-category="tonkatsu">돈카츠</button>
+            <button class="tab-link" data-category="soba">메밀</button>
+            <button class="tab-link" data-category="rice">덮밥</button>
+        </div>
+
+        <!-- 탭에 따라 보여질 메뉴 -->
+        <section class="menu-showcase">
+
+            <!-- 카레 메뉴 -->
+            <div class="menu-category curry active">
+                <div class="menu-info curry-info">
+                    <h3>카레온 카레</h3>
+                    <p>어쩌구 저쩌구 설명 설명 카레에 대한 설명</p>
+                </div>
+                <div class="menu-photo-description">
+                    <div class="carousel-container">
+                        <div class="carousel-inner">
+                            <img src="../source/food/오므카레온.png" alt="오므카레" class="carousel-item active">
+                            <img src="../source/food/함박스테이크카레.png" alt="함박스테이크 카레" class="carousel-item">
+                        </div>
+                    </div>
+                    <div class="menu-description">
+                        <div class="menu-item active">
+                            <h3>오므카레</h3>
+                            <p>카레온 특제 오믈렛이 올라간 부드러운 카레</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>함박스테이크 카레</h3>
+                            <p>부드러운 함박과 카레가 조화를 이룬 메뉴</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 돈카츠 메뉴 -->
+            <div class="menu-category tonkatsu">
+                <div class="menu-info tonkatsu-info">
+                    <h3>돈카츠 설명</h3>
+                    <p>카레온의 돈카츠는 고품질 재료로 정성껏 준비한 바삭한 돈카츠입니다.</p>
+                </div>
+                <div class="menu-photo-description">
+                    <div class="carousel-container">
+                        <div class="carousel-inner">
+                            <img src="../source/food/치즈카츠.png" alt="치즈돈카츠" class="carousel-item active">
+                            <img src="../source/food/등심카츠.png" alt="등심돈카츠" class="carousel-item">
+                        </div>
+                    </div>
+                    <div class="menu-description">
+                        <div class="menu-item active">
+                            <h3>치즈돈카츠</h3>
+                            <p>부드러운 치즈가 가득한 돈카츠</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>등심돈카츠</h3>
+                            <p>바삭한 등심 돈카츠</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 메밀 메뉴 -->
+            <div class="menu-category soba">
+                <div class="menu-info soba-info">
+                    <h3>메밀 설명</h3>
+                    <p>카레온의 메밀은 시원한 냉메밀과 따뜻한 온메밀로 즐길 수 있습니다.</p>
+                </div>
+                <div class="menu-photo-description">
+                    <div class="carousel-container">
+                        <div class="carousel-inner">
+                            <img src="../source/food/냉메밀.png" alt="냉메밀" class="carousel-item active">
+                            <img src="../source/food/온메밀.png" alt="온메밀" class="carousel-item">
+                        </div>
+                    </div>
+                    <div class="menu-description">
+                        <div class="menu-item active">
+                            <h3>냉메밀</h3>
+                            <p>시원하고 깔끔한 냉메밀</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>온메밀</h3>
+                            <p>따뜻한 국물과 함께 즐기는 온메밀</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 덮밥 메뉴 -->
+            <div class="menu-category rice">
+                <div class="menu-info rice-info">
+                    <h3>덮밥 설명</h3>
+                    <p>카레온의 덮밥은 신선한 재료로 준비된 전통 덮밥입니다.</p>
+                </div>
+                <div class="menu-photo-description">
+                    <div class="carousel-container">
+                        <div class="carousel-inner">
+                            <img src="../source/food/돈부리.png" alt="규동" class="carousel-item active">
+                            <img src="../source/food/치즈돈부리.png" alt="치즈 덮밥" class="carousel-item">
+                        </div>
+                    </div>
+                    <div class="menu-description">
+                        <div class="menu-item active">
+                            <h3>규동</h3>
+                            <p>얇게 썬 소고기를 얹은 전통 규동</p>
+                        </div>
+                        <div class="menu-item">
+                            <h3>치즈 덮밥</h3>
+                            <p>바삭한 치킨과 치즈가 조화로운 덮밥</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 가맹 혜택 -->
+    <section class="franchise-benefits">
+        <div class="container">
+            <img src="../source/benefit/001.png" alt="가맹점 혜택" class="benefit-title-image">
+            <ul>
+                <li><img src="../source/benefit/003.png" alt="혜택1" class="benefit-item-image"></li>
+                <li><img src="../source/benefit/002.png" alt="혜택2" class="benefit-item-image"></li>
+                <li><img src="../source/benefit/004.png" alt="혜택3" class="benefit-item-image"></li>
+                <li><img src="../source/benefit/006.png" alt="혜택4" class="benefit-item-image"></li>
+                <li><img src="../source/benefit/005.png" alt="혜택5" class="benefit-item-image"></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 고객 후기 섹션 -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>고객 후기</h2>
+            <div class="testimonial">
+                <p>"카레온은 정말 맛있고 운영하기도 편리합니다!" - 가맹점주 이모씨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ 및 가맹 절차 -->
+    <section class="faq">
+        <div class="container">
+            <h2>자주 묻는 질문</h2>
+            <ul>
+                <li>가맹점 개설 비용은 어떻게 되나요?</li>
+                <li>가맹 신청 절차는 무엇인가요?</li>
+            </ul>
+        </div>
+    </section>
+
+<!-- 푸터 -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-info">
+            <p>주식회사 씨앤비 주소 : 서울특별시 중랑구 동일로 847 성일빌딩 6층</p>
+            <p>대표자 : 여지운, 김진영 사업자등록번호 : 253-87-01899</p>
+            <p>대표번호 : 1899-7019 고객의소리함 : 내선번호 3번 (주말, 공휴일, 점심시간 12-13시 미운영)</p>
+            <p>Copyrights (C) BAEKSOJEONG. All rights reserved. | Designed by WebSite.co.kr</p>
+            <p><a href="#">개인정보처리방침</a> | <a href="#">이메일무단수집거부</a></p>
+        </div>
+        <div class="footer-social">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 30 30">
+                <path d="M 15 2 C 7.832 2 2 7.832 2 15 C 2 22.168 7.832 28 15 28 C 22.168 28 28 22.168 28 15 C 28 7.832 22.168 2 15 2 z M 11.666016 6 L 18.332031 6 C 21.457031 6 24 8.5420156 24 11.666016 L 24 18.332031 C 24 21.457031 21.457984 24 18.333984 24 L 11.667969 24 C 8.5429688 24 6 21.457984 6 18.333984 L 6 11.667969 C 6 8.5429688 8.5420156 6 11.666016 6 z M 11.666016 8 C 9.6450156 8 8 9.6459688 8 11.667969 L 8 18.333984 C 8 20.354984 9.6459688 22 11.667969 22 L 18.333984 22 C 20.354984 22 22 20.354031 22 18.332031 L 22 11.666016 C 22 9.6450156 20.354031 8 18.332031 8 L 11.666016 8 z M 19.667969 9.6660156 C 20.035969 9.6660156 20.333984 9.9640312 20.333984 10.332031 C 20.333984 10.700031 20.035969 11 19.667969 11 C 19.299969 11 19 10.700031 19 10.332031 C 19 9.9640312 19.299969 9.6660156 19.667969 9.6660156 z M 15 10 C 17.757 10 20 12.243 20 15 C 20 17.757 17.757 20 15 20 C 12.243 20 10 17.757 10 15 C 10 12.243 12.243 10 15 10 z M 15 12 A 3 3 0 0 0 15 18 A 3 3 0 0 0 15 12 z"></path>
+            </svg>
+        </div>
+    </div>
+</footer>
+
+    <!-- 하단 고정 박스 -->
+    <div class="fixed-box">
+        <form>
+            <h3>창업 상담 신청</h3>
+            <input type="text" placeholder="성함" required>
+            <input type="tel" placeholder="전화번호" required>
+            <input type="text" placeholder="창업 희망 지역" required>
+            <input type="number" placeholder="나이" required>
+            <button type="submit">상담 신청하기</button>
+        </form>
+    </div>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
